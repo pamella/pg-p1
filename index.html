@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>PG - Degree Elevation of a Bézier Curve</title>
+    <link type="text/css" rel="stylesheet" href="style.css"></link>
+
+      <style>
+        body {
+            font-family: Courier New;
+            font-size: 16px;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+
+      header {
+        margin: auto;
+        width: 100%;
+        position: fixed;
+        top: 0;
+      }
+
+      h1 {
+        font-size: 32px;
+        text-align: center;
+        border: 1px solid white;
+        background: #cc0052;
+      }
+
+      button {
+        color: #cc0052;
+        font-size: 16px;
+      }
+
+      section {
+        margin: auto;
+        width: 100%;
+        height: 10%;
+        position: absolute;
+        bottom: 0;
+        font-style: 900;
+      }
+
+      canvas {
+        width: 100%;
+        height: 90%;
+      }
+
+    	.avaliations {
+    		color: black;
+        width: 5%;
+     	}
+
+      .footer {
+        margin: auto;
+        width: 100%;
+        height: 4%;
+        bottom: 0;
+        position: absolute;
+        text-align: center;
+        background: #1a1a1a;
+      }
+
+    </style>
+  </head>
+  <body>
+  	<header>
+  		<h1>Degree Elevation of a Bézier Curve</h1>
+  	</header>
+
+    <canvas id="canvas"></canvas>
+
+  	<section>
+  		Avaliations:<input type="number" id="avaliations" value="1000" class="avaliations">
+  		Control Points:<input type="checkbox" id="controlPoints_cb" checked>
+  		Control Polygonal:<input type="checkbox" id="controlPolygonal_cb" checked>
+  		Bézier Curve:<input type="checkbox" id="bezierCurve_cb" checked>
+  		<button id="degree_bt" onclick="degreeElevation()"><b>Degree Elevation</b></button>
+    </section>
+
+      <footer>
+        <p class="footer">Developed by <b>Eulália Aries</b> and <b>Pamella Silva.</b></p>
+      </footer>
+  </body>
+  <script src="script.js"></script>
+</html>
